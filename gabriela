@@ -1,0 +1,16 @@
+----crear un grupo llamado casa----
+root@gabriela:~# groupadd casa
+
+----para visualizar los grupos----
+root@gabriela:~# cat  /etc/group
+
+----crear 2 usuarios---- 
+useradd CARLOS 
+useradd GABY
+
+----agregar los usuarios al grupo----
+root@gabriela:~# adduser CARLOS casa
+root@gabriela:~# adduser GABY casa
+
+----cambiar el nombre del grupo----
+root@gabriela:~# groupmod -g 1006 -n familia casa
